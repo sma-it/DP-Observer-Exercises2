@@ -2,9 +2,9 @@
 
 var station = new WeatherApp.WeatherStation();
 
-var display1 = new WeatherApp.TemperatureDisplay();
-var display2 = new WeatherApp.HumidityDisplay();
-var display3 = new WeatherApp.TotalDisplay();
+var display1 = new WeatherApp.TemperatureDisplay(station);
+var display2 = new WeatherApp.HumidityDisplay(station);
+var display3 = new WeatherApp.TotalDisplay(station);
 
 void EnterValues()
 {
